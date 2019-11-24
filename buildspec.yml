@@ -8,7 +8,7 @@ phases:
       - npm install
   build:
     commands:
-      - ng build --configuration=production --build-optimizer
+      - ng build
   post_build:
     commands:
       - aws s3 sync dist/ s3://aws-angular-s3 --delete
