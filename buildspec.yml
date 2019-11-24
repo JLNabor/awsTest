@@ -11,4 +11,4 @@ phases:
       - ng build
   post_build:
     commands:
-      - aws s3 sync dist/ s3://codepipeline-us-east-2-162515279137 --delete
+      - aws s3 sync dist/ s3://aws-angular-s3 --delete
