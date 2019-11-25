@@ -12,8 +12,8 @@ phases:
   post_build:
     commands:
       - aws s3 sync dist/ s3://github-example-s3 --delete
-  artifacts:
-    type: zip
-    base-directory: dist
-    files:
-      - '**/*'
+artifacts:
+  type: zip
+  base-directory: dist
+  files:
+    - '**/*'
