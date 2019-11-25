@@ -8,7 +8,7 @@ phases:
       - npm install -g @angular/cli@6.2.5
   build:
     commands:
-      - ng build
+      - ng build --prod
   post_build:
     commands:
       - aws s3 sync dist/ s3://github-example-s3 --delete
