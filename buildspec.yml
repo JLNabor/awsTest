@@ -14,7 +14,7 @@ phases:
       - aws s3 sync dist/ s3://aws-angular-s3 
 artifacts:
   type: zip
-  base-directory: dist
+  base-directory: 
   files:
-    - /appspec.yml
+    - appspec.yml
     - '**/*'
