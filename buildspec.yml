@@ -16,4 +16,5 @@ artifacts:
   type: zip
   base-directory: dist
   files:
+    - appspec.yml
     - '**/*'
